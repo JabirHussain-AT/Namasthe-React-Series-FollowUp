@@ -5,11 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello World</title>
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
     <div id="root"></div>
+
     <!-- learning how we can inject js into this html
     <script>
+
         //crating an h1 tag and adding content to it .
         const heading = document.createElement("h1")
         heading.innerHTML = 'Hello World From JavaScript'
@@ -19,6 +22,8 @@
 
         //appending to its position using appendChild() method. 
         root.appendChild(heading)
+
+        
     </script>
      -->
 
@@ -32,16 +37,16 @@
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
     <!-- react first programme -->
-    <script>
-      const rootElement = document.getElementById("root");
+    <script src="./App.js">
+      // const rootElement = document.getElementById("root");
 
-      // Use React 18's createRoot method
-      const root = ReactDOM.createRoot(rootElement);
+      // // Use React 18's createRoot method
+      // const root = ReactDOM.createRoot(rootElement);
 
-      // Create a React element
-      const heading = React.createElement("h1", {}, "Hello World from React");
+      // // Create a React element
+      // const heading = React.createElement("h1", {}, "Hello World from React");
 
-      root.render(heading)
-    </script>
+      // root.render(heading)
+    // </script>
   </body>
 </html>
